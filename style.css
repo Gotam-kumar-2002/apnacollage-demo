@@ -1,0 +1,68 @@
+body, h1, h2, h6, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #ff7eb3, #ff758c, #6a11cb, #2575fc);
+    background-size: 400% 400%;
+    animation: gradientBackground 15s ease infinite;
+    font-family: 'Arial', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Heading 1 Styling */
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading 2 Styling */
+h2 {
+    font-size: 2rem;
+    font-weight: semi-bold;
+    margin: 10px 0;
+    color: #f4f4f4;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+/* Heading 6 Styling */
+h6 {
+    font-size: 1rem;
+    font-weight: lighter;
+    margin-top: 20px;
+    text-transform: capitalize;
+    color: #ddd;
+    letter-spacing: 1px;
+}
